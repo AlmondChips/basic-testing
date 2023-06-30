@@ -1,4 +1,3 @@
-// Uncomment the code below and write your tests
 import { simpleCalculator, Action } from './index';
 
 const testCases = [
@@ -17,7 +16,6 @@ const testCases = [
   { a: 2, b: 4, action: Action.Exponentiate, expected: 16 },
   { a: 3, b: 2, action: Action.Exponentiate, expected: 9 },
   { a: 5, b: 3, action: Action.Exponentiate, expected: 125 },
-  // continue cases for other actions
 ];
 
 const nullTestCases = [
@@ -30,7 +28,6 @@ const nullTestCases = [
 ];
 
 describe('simpleCalculator', () => {
-  // This test case is just to run this test suite, remove it when you write your own tests
   describe.each(testCases)(`args(%i, %i)`, ({ a, b, action, expected }) => {
     test(`Should return result of ${action}`, () => {
       expect(simpleCalculator({ a, b, action })).toBe(expected);
@@ -42,5 +39,4 @@ describe('simpleCalculator', () => {
       expect(simpleCalculator({ a, b, action })).toBeNull();
     });
   });
-  // Consider to use Jest table tests API to test all cases above
 });

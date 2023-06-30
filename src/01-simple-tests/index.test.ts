@@ -1,4 +1,3 @@
-// Uncomment the code below and write your tests
 import { simpleCalculator, Action, RawCalculatorInput } from './index';
 
 const createTestData = (Action: Action | unknown): RawCalculatorInput => {
